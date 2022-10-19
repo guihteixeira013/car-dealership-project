@@ -31,9 +31,34 @@ body {
 }
 
 body > header {
+    position: sticky;
+    top: 0px;
     background-color: black;
     width: 100%;
     height: 75px;
+}
+
+header > span {
+    position: fixed;
+    display: inline-block;
+    top: 20px;
+}
+
+header > span#menu {
+    left: 20px;
+}
+
+header > img {
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: 25px;
+}
+
+header > span#search {
+    right: 40px;
 }
 
 section#slide_show {
@@ -62,11 +87,29 @@ section#our_cars h2 {
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+    padding: 50px;
+}
+
+section#our_cars div#our__cars{
+    background-color: lightgray;
+    margin: auto;
+    padding: 10px;
+    width: 90vw;
+    height: 100px;
 }
 
 section#our_cars li {
-    display: inline-block;
+    display: inline;
+    margin: 10px;
+}
+
+section#our_cars li a{
     color: black;
+    margin: 10px;
+}
+
+section#our_cars div#info-button {
+    margin-top: 50px;
 }
 
 section#our_cars a#cars-button{
@@ -80,6 +123,7 @@ section#our_cars a#cars-button{
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 2.6em;
+    margin: auto;
     width: 200px;
     height: 50px;
 }
@@ -91,6 +135,8 @@ section#our_cars a#cars-button:hover {
 
 section#guarantee {
     background-color: black;
+    padding: 20px;
+    line-height: 2.5em;
     width: 100%;
     height: 300px;
 }
@@ -109,7 +155,20 @@ section#guarantee a#guarantee-button {
     border-bottom: 2px solid white;
 }
 
+div#line {
+    background-color: var(--color-1);
+    margin: auto;
+    width: 85vw;
+    height: 1px;
+}
+
+footer {
+    padding: 20px;
+}
+
 footer img {
+    display: block;
+    margin-bottom: 20px;
     width: 130px;
     height: 40px;
 }
@@ -118,6 +177,14 @@ footer p {
     color: var(--color-2);
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+footer section {
+    display: inline-block;
+    line-height: 2em;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 40vw;
 }
 
 footer a {
