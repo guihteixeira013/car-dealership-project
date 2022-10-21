@@ -111,10 +111,11 @@ section#our_cars li a {
 
 section#our_cars li a:hover {
     color: black;
+    
     transition: color 1s;
 }
 
-section#our_cars div#thumbs img {
+section#our_cars iframe {
     display: block; 
     margin: auto;
     width: 320px;
