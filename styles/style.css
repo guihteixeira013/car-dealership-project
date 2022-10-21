@@ -79,7 +79,7 @@ section#slide_show a#slide-button {
 section#our_cars {
     background-color: white;
     width: 100%;
-    height: 400px;
+    height: 550px;
 }
 
 section#our_cars h2 {
@@ -91,28 +91,41 @@ section#our_cars h2 {
 }
 
 section#our_cars div#our__cars{
-    background-color: lightgray;
+    background-color: white;
+    columns: 2;
     margin: auto;
+    margin-bottom: 15px;
     padding: 10px;
+    line-height: 1.6em;
     width: 90vw;
     height: 100px;
 }
 
-section#our_cars li {
-    display: inline;
+section#our_cars li a {
+    font-size: .8em;   
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.400);
+    text-transform: uppercase;
     margin: 10px;
 }
 
-section#our_cars li a{
+section#our_cars li a:hover {
     color: black;
-    margin: 10px;
+    transition: color 1s;
+}
+
+section#our_cars div#thumbs img {
+    display: block; 
+    margin: auto;
+    width: 320px;
+    height: 150px;
 }
 
 section#our_cars div#info-button {
     margin-top: 50px;
 }
 
-section#our_cars a#cars-button{
+section#our_cars a#link-button{
     display: block;
     background-color: white;
     border: 2px solid black;
@@ -128,7 +141,7 @@ section#our_cars a#cars-button{
     height: 50px;
 }
 
-section#our_cars a#cars-button:hover {
+section#our_cars a#link-button:hover {
     background-color: black;
     color: white;
 }
