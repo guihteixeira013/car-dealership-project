@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 :root { /*PALETTE COLOR*/
-    --color-0 : #161540;
-    --color-1 : #020659;
-    --color-2 : #65BF8C;
-    --color-3 : #3E7CB1;
+    --color-0 : #BA835C; /*pic guarantee 1*/
+    --color-1 : #020659; /*logo caoa*/
+    --color-2 : #ECC685; /*pic guarantee 1*/
+    --color-3 : #0054D0; /*pic guarantee 2*/
+    --color-4 : #59CD90; /*coolors all*/
 }
 
 * {
@@ -136,18 +137,28 @@ section#guarantee {
 }
 
 section#guarantee h2 {
-    padding: 20px;
     font-weight: normal;
     text-transform: uppercase;
 }
 
-section#guarantee a#guarantee-button {
+h2 span.emphasis {
+    color: #59CD90;
+    font-weight: 100;
+}
+
+a#guarantee-button {
     color: white;
     font-size: .8em;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 1px;;
     text-transform: uppercase;
     border-bottom: 2px solid white;
+}
+
+div#guarantee-content {
+    line-height: 3em;
+    padding: 20px;
+    height: 250px;
 }
 
 div#line {
@@ -169,7 +180,7 @@ footer img {
 }
 
 footer p {
-    color: var(--color-2);
+    color: var(--color-4);
     font-weight: bold;
     letter-spacing: 1px;
 }
