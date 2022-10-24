@@ -172,10 +172,3 @@ footer section {
 footer a {
     color: white;
 }
-
-footer a.line-hover {
-    background-color: currentColor;
-    content: "";
-    transform-origin: ;
-    transform: scaleX(1);
-}
