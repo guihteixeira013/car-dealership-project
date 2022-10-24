@@ -63,7 +63,7 @@ header > span#search {
 
 section#slide_show {
     position: flex;
-    background-color: yellow;
+    background-color: lightgray;
     width: 600%;
     height: 500px;
     overflow: hidden;
@@ -117,13 +117,26 @@ section#our_cars iframe {
 
 section#guarantee {
     background-color: black;
-    padding: 20px;
     line-height: 2.5em;
+    margin-bottom: 20px;
     width: 100%;
-    height: 300px;
+}
+
+.guarantee-banner {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+}
+
+.guarantee-banner img {
+    height: 500px;
+    width: 100vw;
+    object-fit: cover;
 }
 
 section#guarantee h2 {
+    padding: 20px;
     font-weight: normal;
     text-transform: uppercase;
 }
