@@ -62,7 +62,7 @@ header > span#search {
 }
 
 section#slide_show {
-    position: relative;
+    position: flex;
     background-color: yellow;
     width: 600%;
     height: 500px;
