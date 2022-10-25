@@ -196,3 +196,10 @@ footer section {
 footer a {
     color: white;
 }
+
+footer a:hover {
+    border-left: 1px solid white;
+    padding-left: 7px;
+
+    transition: .6s;
+}
