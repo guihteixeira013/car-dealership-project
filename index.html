@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- HIDDEN MENU -->
-    <div id="myNav" class="overlay">
+    <div id="myNav" class="overlay" style="display: none;">
         <a href="#" class="closeNav">&times;</a>
         <div class="overlay-content">
             <a href="#">Caoa</a>
@@ -21,9 +21,16 @@
         </div>
     </div>
     <header>
-        <span id="menu" class="material-symbols-outlined">menu</span>
-        <img src="images/logo-caoa.png" alt="logo caoa">
-        <span id="search" class="material-symbols-outlined">search</span>
+        <!-- STICKY HEADER -->
+        <div id="navbar">
+            <span id="menu" class="material-symbols-outlined">
+                <a href="#">menu</a>
+            </span>
+            <img src="#logo caoa" alt="logo caoa">
+            <span id="search" class="material-symbols-outlined">
+                <a href="#">search</a>
+            </span>
+        </div>
     </header>
     <main>
         <section id="slide_show">
@@ -87,5 +94,20 @@
         </section>    
         <div id="line"></div>
     </footer>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
