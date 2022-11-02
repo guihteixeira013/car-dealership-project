@@ -11,15 +11,7 @@
 </head>
 <body>
     <!-- HIDDEN MENU -->
-    <div id="myNav" class="overlay" style="display: none;">
-        <a href="#" class="closeNav">&times;</a>
-        <div class="overlay-content">
-            <a href="#">Caoa</a>
-            <a href="#">Nossos Carros</a>
-            <a href="#">Pós-Venda</a>
-            <a href="#">Contato</a>
-        </div>
-    </div>
+    
     <header>
         <!-- STICKY HEADER -->
         <div id="navbar">
@@ -96,18 +88,7 @@
     </footer>
 
     <script>
-        window.onscroll = function() {myFunction()};
 
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
     </script>
 </body>
 </html>
