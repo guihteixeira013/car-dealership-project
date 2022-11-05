@@ -15,9 +15,17 @@
     <header>
         <!-- STICKY HEADER -->
         <div id="navbar">
-            <span id="menu" class="material-symbols-outlined">      <!-- DROPDOWN MENU -->
-                <a href="#">menu</a>
-            </span>
+            <div class="dropdown">
+                <button onclick="dropdownMenu()" class="dropbtn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Caoa</a>
+                    <a href="#">Nossos Carros</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Pós-venda</a>
+                </div>
+            </div>
             <img src="#logo caoa" alt="logo caoa">                  <!-- LOGO -->
             <span id="search" class="material-symbols-outlined">    <!-- SEARCH -->
                 <a href="#">search</a>
@@ -88,7 +96,11 @@
     </footer>
 
     <script>
-
+        /*
+        function dropdownMenu() {
+            window.document.write('You Clicked!')
+        }
+        */
     </script>
 </body>
 </html>
