@@ -14,7 +14,7 @@
     <header>
         <div class="navbar">
             <div class="dropdown">
-                <button onclick="dropdownMenu()" class="dropbtn">
+                <button onclick="dropdownMenu()" id="myBtn" class="dropbtn">
                     <span class="material-symbols-outlined">menu</span>
                 </button>
                 <div id="myDropdown" class="dropdown-content">
@@ -94,11 +94,14 @@
     </footer>
 
     <script>
-        /*
         function dropdownMenu() {
-            window.document.write('You Clicked!')
+            var menu = window.document.getElementById("myDropdown");
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
         }
-        */
     </script>
 </body>
 </html>

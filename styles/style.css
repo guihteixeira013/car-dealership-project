@@ -63,17 +63,13 @@ body {
     cursor: pointer;
 }
 
-.dropbtn:hover {
-    background-color: var(--color-0);
-}
-
-.dropbtn:focus {
-    background-color: var(--color-1);
+.dropbtn:hover, .dropbtn:focus {
+    background-color: black;
 }
 
 .dropdown-content { /*HIDDEN by default*/
     position: absolute;
-    /*display: none;*/
+    display: none;
     background-color: black;
     width: 150px;
     padding: 15px;
