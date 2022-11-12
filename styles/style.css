@@ -27,6 +27,8 @@ a {
     text-decoration: none;
 }
 
+.show {display: block;}
+
 .zoom {
     transition: all 3s;
 }
@@ -46,6 +48,7 @@ body {
     top: 0px;
     background-color: white;
     width: 100%;
+    height: 45px;
     z-index: 1;
 }
 
@@ -91,8 +94,6 @@ body {
     transition: .6s;
 }
 
-.show {display: block;}
-
 .navbar-img {
     position: relative;
     display: inline-flex;
@@ -103,6 +104,21 @@ body {
     position: relative;
     width: 80px;
     height: 25px;
+}
+
+.search {  
+    position: relative;
+    display: inline-block;
+}
+
+.searchbtn {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    color: black;
+    font-size: 1em;
+    padding: 10px;
+    cursor: pointer;
 }
 
 section#slide_show {
@@ -203,7 +219,7 @@ div#guarantee-content {
     height: 250px;
 }
 
-div#line {
+.line {
     background-color: var(--color-1);
     margin: auto;
     width: 85vw;

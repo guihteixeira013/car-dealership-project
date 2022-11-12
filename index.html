@@ -26,10 +26,24 @@
             </div>
             <div class="navbar-img">
                 <img src="images/logo-caoa.png" alt="logo caoa">  <!-- LOGO -->
-            </div>                  
-            <span id="search" class="material-symbols-outlined">    <!-- SEARCH -->
-                <a href="#">search</a>
-            </span>
+            </div> 
+            <div class="search">
+                <button onclick="#" id="mySrchbtn" class="searchbtn">
+                    <span id="search" class="material-symbols-outlined">    <!-- SEARCH -->
+                        search
+                    </span>
+                </button>
+                <div id="mySearch" class="search-content">
+                    <form action="#" method="post" autocomplete="on">
+                        <label for="isearch">
+                            <span id="search" class="material-symbols-outlined">
+                                search
+                            </span>
+                        </label>
+                        <input type="search" name="search" id="isearch" placeholder="Pesquisar" maxlength="30" required>
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -69,7 +83,7 @@
             </div>
         </section>
     </main>
-    <div id="line"></div>
+    <div class="line"></div>
     <footer>
         <img src="images/logo-caoa.png" alt="logo caoa">
         <section class="ft-our_cars">
@@ -92,7 +106,7 @@
                 <li><a class="line-hover" href="https://www.linkedin.com/company/hyundai-caoa-do-brasil/" target="_blank">Linkedin</a></li>
             </ul>
         </section>    
-        <div id="line"></div>
+        <div class="line"></div>
     </footer>
 
     <script>
