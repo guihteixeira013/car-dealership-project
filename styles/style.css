@@ -92,6 +92,18 @@ body {
 
 .show {display: block;}
 
+.navbar-img {
+    position: relative;
+    display: inline-flex;
+    left: 30%;
+}
+
+.navbar-img > img {
+    position: relative;
+    width: 80px;
+    height: 25px;
+}
+
 section#slide_show {
     background-color: lightgray;
     width: 600%;
