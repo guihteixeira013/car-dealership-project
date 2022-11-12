@@ -94,11 +94,11 @@
     </footer>
 
     <script>
-        function dropdownMenu() {
+        function dropdownMenu() { /*function to show or hidde the menu*/
             document.getElementById("myDropdown").classList.toggle("show");
         }
 
-        window.onclick = function(event) {
+        window.onclick = function(event) {  /*function to verify if user clicks outside from the menu*/
             if (!event.target.matches('.dropbtn')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 var i;
